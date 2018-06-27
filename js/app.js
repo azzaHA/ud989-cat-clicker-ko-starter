@@ -4,6 +4,8 @@ var ViewModel = function(){
   this.url = ko.observable('img/22252709_010df3379e_z.jpg');
   this.title = ko.observable('newborn');
 
+  this.nickNames = ko.observableArray(['Cutie Cat', 'Tommy', 'Bingo', 'Tiger']);
+
   this.incrementCounter = function(){
     this.clickCount(this.clickCount() + 1);
     if (this.clickCount() > 30){
